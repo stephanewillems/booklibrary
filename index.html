@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+     
+        <div class="grid-container">
+
+            <!-- ModalStart -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <form class="formInput">
+                      <label for="author" >Author's name:</label>
+                      <input type="text" id="author" class="author">
+                      <label for="titleBook" >Title:</label>
+                      <input type="text" id="titleBook" class="titleBook">
+                      <label for="nrPages" >Number of Pages:</label>
+                      <input type="text" id="nrPages" class="nrPages">
+                      <label for="nrPages" >Read status:</label>
+                      <input type="checkbox" id="readBook" class="readBook" >
+                  <button type="submit" class="addBook btn"> add book </button>
+                  </form>
+                </div>
+              </div>
+               <!-- ModalEND -->
+
+            <div class="navBar">
+              <div class="logo">
+                <h1>The BookCloset</h1>
+                <p>By Stéphane Willems 2020</p>
+              </div>
+              <div class="Menu">
+                <div class="buttons">
+                  <button class='popup btn'>Add Book</button>
+                </div>
+                  
+              </div>
+            </div>
+            <div class="library"></div>
+          </div>
+        <script src="script.js" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,204 @@
+html, body, .grid-container { 
+  height: 100%; margin: 0;  background-color: rgb(245, 245, 245);
+  color: rgb(196, 196, 196);
+  font-family: "Arial", sans-serif;
+}
+h1{
+  font-size: 20px;
+}
+.btn{
+  border-radius: 15px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 6px 6px 13px #dadada, -6px -6px 13px #ffffff;
+  font-size: 14px;
+  color: rgb(182, 182, 182);  
+  padding-bottom: 8px;
+  margin: 0 auto;    
+  text-transform: uppercase;     
+               
+}
+
+input[type="text"]{
+  border-radius: 8px;
+background: #ebebeb;
+box-shadow: inset 2px 2px 10px #e9e9e9, 
+            inset -2px -2px 5px #fbfbfb;
+            height: 30px;
+            padding-left: 5px;
+            margin-top: 4px;
+
+}
+.innerbook{
+  height: 100px;
+  padding-bottom: 20px;
+}
+.labelCheck{
+  font-size: 15px;
+}
+
+.buttons{
+  
+  width:30%;
+  height:100%;
+  
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.3fr 1.7fr 1fr;
+  gap: 1px 1px;
+  padding: 5em;
+  width: 700px;
+  margin: 0 auto;
+  grid-template-areas: "navBar navBar navBar navBar" "library library library library" "library library library library";
+}
+.navBar {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+  grid-template-areas: "logo Menu Menu . ";
+  grid-area: navBar;
+  align-self: center;
+
+}
+
+.buttons > button {
+  
+  height: 50%;
+  
+ 
+}
+
+.logo {
+   grid-area: logo; }
+.logo > p{
+  font-size: 10px;
+}
+
+
+.Menu { grid-area: Menu;
+  justify-self: center; 
+  align-self: center;
+width: 100%;}
+
+.library {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1px 1px;
+  grid-template-areas: " . . ." " . . .";
+  grid-area: library;
+  height: auto;
+  padding-top: 1em;
+  text-align: center;
+
+}
+
+.books{
+  padding-top: 10px;
+  margin-bottom: 10px;
+  background-color: darkseagreen;
+  height : 15em;
+  width: 12rem;
+  border-radius: 25px;
+  background: #f5f5f5;
+  box-shadow: 7px 7px 14px #dadada, -7px -7px 14px #ffffff;
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border-radius: 8px;;
+  width: 250px; /* Could be more or less, depending on screen size */
+  height: 300px;
+  
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(156, 156, 156);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.formInput{
+ 
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top:1em;
+  padding-right: 2em;
+  padding-left:1em;
+}
+input{
+  margin-bottom: 20px;
+}
+
+.formInput> button{
+  height: 30px;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #eeeeee, #ffffff);
+  box-shadow: 6px 6px 13px #e7e7e7, -6px -6px 13px #ffffff;
+}
+
+/* reset style of standard button*/
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="text"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+button:active {
+  border-radius: 15px;
+  background: #f5f5f5;
+  box-shadow: inset 6px 6px 13px #d0d0d0, inset -6px -6px 13px #ffffff;
+
+}
+
+button{
+  font-weight: 400;
+  font-size: 0.5rem;
+  padding-top: 0.5rem;
+  display: block;
+  width: 80%;
+  height: 20%;
+
+  
+}
+
+/* switch */
